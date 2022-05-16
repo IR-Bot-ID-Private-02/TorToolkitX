@@ -4,19 +4,19 @@ except:
 
     class ExecVars:
         # Set true if its VPS
-        IS_VPS = False
+        IS_VPS = True
 
-        API_HASH = ""
-        API_ID = 0
-        BOT_TOKEN = ""
+        API_HASH = "71611534e8061b132d6f9b0a2ef8aa23"
+        API_ID = 8238141
+        BOT_TOKEN = "2085533896:AAFJixNxOlachLGHIhqstsvbv5tPyMQykOs"
         BASE_URL_OF_BOT = ""
 
         # Edit the server port if you want to keep it default though.
         SERVPORT = 80
 
         # ALLOWED USERS [ids of user or supergroup] seperate by commas
-        ALD_USR = []
-        OWNER_ID = 0
+        ALD_USR = [-1001680823782 -1001627921216 -1001397548715]
+        OWNER_ID = 1760045688
 
         # Google Drive Index Link should include the base dir also See readme for more info
         GD_INDEX_URL = False
@@ -25,7 +25,7 @@ except:
         EDIT_SLEEP_SECS = 10
 
         # Telegram Upload Limit (in bytes)
-        TG_UP_LIMIT = 1700000000
+        TG_UP_LIMIT = 1900000000
 
         # Should force evething uploaded into Document
         FORCE_DOCUMENTS = False
@@ -37,15 +37,14 @@ except:
         REMAINING_STR = "▱"
 
         # DB URI for access
-        DATABASE_URL = (
-            "dbname=tortk user=postgres password=your-pass host=127.0.0.1 port=5432"
-        )
+        DATABASE_URL = "dbname=railway user=postgres password=n4miQ7KXzSfegtR4v9cu host=containers-us-west-56.railway.app port=6318"
 
         # UNCOMMENT THE BELOW LINE WHEN USING CONTAINER AND COMMENT THE UPPER LINE
         # DATABASE_URL = "dbname=tortk user=postgres password=your-pass host=db port=5432"
+#PGPASSWORD=n4miQ7KXzSfegtR4v9cu psql -h containers-us-west-56.railway.app -U postgres -p 6318 -d railway
 
         # MEGA CONFIG
-        MEGA_ENABLE = False
+        MEGA_ENABLE = True
         MEGA_API = ""
         MEGA_UNAME = None
         MEGA_PASS = None
@@ -63,7 +62,7 @@ except:
 
         # Will be enabled once its set
         # For vps change it to True if config loaded
-        RCLONE_ENABLED = False
+        RCLONE_ENABLED = True
 
         # If the user fails to select whether to use rclone or telegram to upload this will be the deafult.
         DEFAULT_TIMEOUT = "leech"
@@ -75,7 +74,7 @@ except:
         DEF_RCLONE_DRIVE = ""
 
         # Max size of a playlist that is allowed (Number of videos)
-        MAX_YTPLAYLIST_SIZE = 20
+        MAX_YTPLAYLIST_SIZE = 600
 
         # Max size of the torrent allowed
         MAX_TORRENT_SIZE = 10
@@ -108,5 +107,5 @@ except:
         RSTUFF = False
         FORCE_DOCS_USER = False
         FAST_UPLOAD = True
-        METAINFO_BOT = False
+        METAINFO_BOT = True
         EXPRESS_UPLOAD = True
